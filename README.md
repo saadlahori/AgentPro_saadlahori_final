@@ -15,8 +15,8 @@ AgentPro is a lightweight ReAct-style agentic framework built in Python, designe
 - 🧠 Powered by any LLM! (Anthropic, Open AI or any other Open source LLMs)
 
 ## Quick Start
-Goto: https://github.com/saadlahori/AgentPro_saadlahori_final
-Run Streamlit Interface from app_final_saadlahori.py
+- Goto: https://github.com/saadlahori/AgentPro_saadlahori_final
+- Run Streamlit Interface from app_final_saadlahori.py
 
 ### Installation
 
