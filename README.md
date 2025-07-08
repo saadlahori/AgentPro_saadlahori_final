@@ -175,5 +175,5 @@ AgentPro/
 - Unsplash
 
 ## License & Link
-Goto: https://github.com/saadlahori/AgentPro_saadlahori_final
-This project is licensed under the Apache 2.0 License and build in Visual Studio Code - see the LICENSE file for more details.
+- Goto: https://github.com/saadlahori/AgentPro_saadlahori_final
+- This project is licensed under the Apache 2.0 License and build in Visual Studio Code - see the LICENSE file for more details.
