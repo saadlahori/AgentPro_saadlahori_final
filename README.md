@@ -16,6 +16,8 @@ AgentPro is a lightweight ReAct-style agentic framework built in Python, designe
 
 ## Quick Start
 Goto: https://github.com/saadlahori/AgentPro_saadlahori_final
+Run Streamlit Interface from app_final_saadlahori.py
+
 ### Installation
 
 Install agentpro repository using pip:
