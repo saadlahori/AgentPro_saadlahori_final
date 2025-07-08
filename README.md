@@ -1,5 +1,4 @@
-# AgentPro
-
+# AgentPro_saadlahori
 AgentPro is a lightweight ReAct-style agentic framework built in Python, designed for structured reasoning step-by-step using available tools, while maintaining a complete history of Thought → Action → Observation → PAUSE → Final Answer steps.
 
 <p align="center">
@@ -16,7 +15,7 @@ AgentPro is a lightweight ReAct-style agentic framework built in Python, designe
 - 🧠 Powered by any LLM! (Anthropic, Open AI or any other Open source LLMs)
 
 ## Quick Start
-
+Goto: https://github.com/saadlahori/AgentPro_saadlahori
 ### Installation
 
 Install agentpro repository using pip:
@@ -32,6 +31,9 @@ Create a `.env` file in the root directory with your API keys:
 ```
 OPENAI_API_KEY=your_openai_api_key
 TRAVERSAAL_ARES_API_KEY=your_traversaal_ares_api_key
+UNSPLASH_ACCESS_KEY = Your Unplash Key
+ELEVENLABS_API_KEY"] = Your Eleven Labs Key
+OPENWEATHER_API_KEY = Your Open Weather Key
 ```
 Ares internet tool: Searches the internet for real-time information using the Traversaal Ares API. To get `TRAVERSAAL_ARES_API_KEY`. Follow these steps:
 
@@ -39,6 +41,7 @@ Ares internet tool: Searches the internet for real-time information using the Tr
 2. Log in or create an account
 3. Click **"Create new secret key"**
 4. Copy the generated key and paste in `.env` file :
+5. Similarly do it for all Tools to fetch API Keys
 
 ### Running the Agent
 
@@ -72,55 +75,10 @@ response = agent.run(query)
 
 print(f"\nFinal Answer: {response.final_answer}")
 ```
-For Ares api key, follow these steps:
 
-1. Go to the [Traversaal API platform](https://api.traversaal.ai/)
-2. Log in or create an account
-3. Generate your Ares API key from the dashboard.
+For more details, contact or email me
 
-<!--
-You can also use the [Quick Start](https://github.com/traversaal-ai/AgentPro/blob/main/cookbook/quick_start.ipynb) Jupyter Notebook to run AgentPro directly in Colab.
--->
-## 🌍 Traversaal x Optimized AI Hackathon 2025
-
-We’re teaming up with the **Optimized AI Conference 2025** to host a **global hackathon on AI Agents** — open to all developers, builders, researchers, and dreamers working on intelligent systems.
-
-### The Challenge
-
-**Build a real, functional AI Agent** that solves a real-world problem.
-
-This isn’t about flashy demos. We want to see domain-specific, usable, vertical agents — like:
-- 🧑‍💼 Customer Support Agents
-- 🔬 Research Assistants
-- 📊 Data Analyst Agents
-- 💡 Or something totally original
-
-You can use any framework, but we recommend trying **[AgentPro](https://github.com/traversaal-ai/AgentPro)** — our open-source toolkit designed for rapid prototyping and robust architecture.
-
-### Key Dates
-
-- **Hackathon Starts:** April 9, 2025  
-- **Submission Deadline:** April 15, 2025  
-- **Winners Announced:** April 15, 2025 (Live @ Optimized AI Conference)
-
-### Prizes + Recognition
-
-| Prize Tier         | Reward     |
-|--------------------|------------|
-| 🥇 Grand Prize      | $1,000     |
-| 🥈 Runner-Up        | $500     |
-| 🥉 Honorable Mention x2 | $250       |
-
-Plus:
-- 1:1 **Mentorship opportunities**
-- Invitation to **Traversaal’s AI Fellowship Program**
-
-### Want to be a Judge?
-We’re looking for global experts in AI, product, UX, and enterprise applications to help evaluate the submissions. 👉 [Apply to be a Judge](https://forms.gle/zpC4GbEjAkD1osY68)
-
-For more details, follow this [link](https://hackathon.traversaal.ai/)
-
-📩 Questions? Reach us at [hackathon-oai@traversaal.ai](hackathon-oai@traversaal.ai)
+📩 Questions? Reach us at [saadlahori@gmail.com)
 
 ## 🛠️ Creating Custom Tools
 
@@ -176,7 +134,7 @@ AgentPro/
 │   ├── react_agent.py                  # Core AgentPro class implementing react-style agent framework
 │   ├── agent.py                        # Action, Observation, ThoughtStep, AgentResponse classes
 │   ├── model.py                        # Model classes 
-│   ├── tools/                          # folder for all tool classes
+│   ├── tools/ (                          # folder for all tool classes (Base by Traversal AI)
 │       ├── __init__.py
 │       ├── base_tool.py
 │       ├── duckduckgo_tool.py
@@ -186,10 +144,17 @@ AgentPro/
 │       ├── traversaalpro_rag_tool.py
 │       ├── slide_generation_tool.py
 │       └── yfinance_tool.py
+│   ├── tools/                      # folder for all tool classes (Custom by Saad Saleem, Radiant Technologies )
+│       ├── custom_tool_weather_map.py
+│       ├── custom_tool_texttospeech_Elevenlabs.py
+│       ├── custom_tool_unsplash_Image.py
+│       ├── custom_tool_text_to_image.py
+│       ├── custom_tool_huggingface.py
 ├── cookbook/
 │   ├── Traversaal x Optimized AI Hackathon 2025
 │   ├── quick_start.ipynb
-│   └── custool_tool.ipynb      
+│   └── custool_tool.ipynb   
+├── app_final_saadlahori.py     # Main Streamlit GUI Integrated Interface
 ├── main.py                             # Entrypoint to run the agent
 ├── requirements.txt                    # Dependencies
 ├── README.md                           # Project overview, usage instructions, and documentation
@@ -199,11 +164,14 @@ AgentPro/
 ```
 
 ## Requirements
-
+- All listed in requirement.txt
 - Python 3.8+
 - OpenAI API key
 - Traversaal Ares API key for internet search (Optional)
+- Eleven Labs TTS
+- Open Weather
+- Unsplash
 
-## License
-
-This project is licensed under the Apache 2.0 License - see the LICENSE file for more details.
+## License & Link
+Goto: https://github.com/saadlahori/AgentPro_saadlahori
+This project is licensed under the Apache 2.0 License and build in Visual Studio Code - see the LICENSE file for more details.
